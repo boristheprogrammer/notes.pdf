@@ -85,4 +85,45 @@ humans -->|control/direct| ai_agents
 
 ## Interactions
 
+In this model where A.I agents do most of the actual work on behalf of humans, one question we may ask ourselves is
+how can humans now interact with the internet.
+
+As we described above, A.I agents will most likely do various tasks as instructed by their owner.
+Those tasks can vary from summarizing information, purchasing products or notifying their owner about an important information
+he/she may have requested.
+
+If the A.I agent is doing all those tasks, it can inform its owner via a messaging application.
+Probably the owner will also be able to control or interact with its A.I agent(s) through a similar mechanism or a more
+complex one where the orchestration and management of its A.I agent(s) will be possible.
+
+```mermaid
+flowchart TB
+  humans["Humans"]
+  subgraph ai_agents_management_tool["A.I Agents Management Tool"]
+    direction LR
+    subgraph features["Features"]
+      messaging["Messaging"]
+      orchestration["Orchestration"]
+      settings["Settings"]
+      others["..."]
+    end
+    subgraph ai_agents["A.I agents"]
+      direction LR
+      ai_models["A.I models AAAA...AAAA."]
+      ai_models_dots["..."]
+      ai_models_last["A.I models ZZZZ...ZZZZ."]
+    end
+  end
+  internet["WWW"]
+
+%% connections
+humans <-->|interact| ai_agents_management_tool
+ai_agents <-->|interact| internet
+```
+
+Of course, in this model, humans can still interact with the internet / world wide web as before,
+however this type of interaction will no longer be the primary one since we could see that they would prefer
+spend time in the real life doing real thing or instead of doing all the chores they use to do that is now done by
+their A.I agents.
+
 
